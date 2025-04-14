@@ -1,0 +1,344 @@
+/**
+* 2007-2020 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2020 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+
+#geolocation-container {
+	height: 225px;
+}
+
+#geolocation-container .container {
+	margin: auto;
+}
+
+#geolocation-container .close_button  {
+	position: absolute;
+	right: 15px;
+	top: 13px;
+	display: none;
+}
+
+#geolocation-container #geolocation-alert {
+    height: 225px;
+    border: none;
+}
+
+#geolocation-container .container_phrase {
+	justify-content: center;
+	margin-top: 18px;
+	width: 100%;
+}
+
+#geolocation-container .phrase_alert {
+	height: 10px;
+	font-family: SourceSansProRegular, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 0.33;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+#geolocation-container #storesDropdown, 
+ .button_selector_flag {
+	height: 35px;
+	border: solid 1px #5e5a52;
+	font-family: SourceSansProRegular, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #5e5a52;
+	background-color: #fff;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.button_selector_flag::after {
+	content: "\25bc";
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	font-size: 11px;
+	color: black;
+	border: none;
+}
+.list_flags_dropdown {
+	margin-top: 0px;
+	font-family: SourceSansProRegular, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #5e5a52;
+	background-color: #fff;
+	width: 100%;
+	z-index: 10000;
+}
+.list_flags_dropdown li{
+	cursor: pointer;
+	width: 100%;
+	padding: 10px;
+}
+.list_flags_dropdown li .flags_img{ 
+	margin-left: 11px;
+	margin-right: 5px;
+}
+.list_flags_dropdown li.flag-international .flags_img{
+	width: 44px;
+	height: 26px;
+	margin-left: 5px;
+	margin-right: 0;
+	padding: 0;
+}
+.flags_img {
+	width: 25px;
+	height: 17px;
+}
+.text_button {
+	margin-left: 10px;
+}
+
+#geolocation-container .stores_dropdown,
+#geolocation-container .arrow,
+#geolocation-container #storesDropdown {
+	width: 100%;
+}
+#geolocation-container .close_button button {
+    padding: 0;
+}
+
+#geolocation-container .close_button button span {
+	color: white;
+	font-size: 13px;
+    border-radius: 100%;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#geolocation-container .close_button button span img{
+	width: 15px;
+	height: 15px;
+}
+#geolocation-container .close_button  .close {
+	opacity: initial;
+}
+#storesDropdown, .stores_dropdown {
+	display: none !important;
+}
+#geolocation-container .close_button button span.phrase_close {
+	display: none;
+}
+#geolocation-alert .submit_button {
+    margin: 20px auto 0px;
+}
+#geolocation-alert .submit_button button{
+	font-family: SourceSansProBold;
+    display: block;
+    width: 140px;
+    height: 30px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 61%);
+    background-color: #000000;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 13px;
+    border-radius: 5px;
+}
+#geolocation-logo {
+	position: absolute;
+	left: 50px;
+	top: 20px;
+}
+#geolocation-container .selector-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+	background: white;
+	border-radius: 15px;
+}
+#geolocation-container{
+	position: fixed;
+	background-image: url('/modules/shop_geolocation/views/img/bg.png');
+	background-position: center center;
+	background-size: cover;
+	z-index: 9999;
+}
+#geolocation-container,#geolocation-container #geolocation-alert {
+	height: 100vh;
+}
+#geolocation-container .phrase_alert {
+	height: 10px;
+	font-family: SourceSansProRegular, sans-serif;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 0.33;
+	letter-spacing: normal;
+	text-align: left;
+	color: black;
+	font-size: 18px;
+}
+
+@media (max-width: 767px) {
+	#geolocation-container .phrase_alert{
+		line-height: 1.2;
+		height: auto;
+	}
+	#geolocation-alert .container {
+		width: 80%;
+		margin-top: 130px;
+		margin-bottom: 0;
+	}
+	#geolocation-container .selector-wrapper{
+		display: block;
+	}
+	#geolocation-alert .submit_button button{
+		height: 35px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	#geolocation-container .block-selector {
+		min-width: 360px;
+		margin-right: 25px
+	}
+	#geolocation-container .container_phrase {
+		justify-content: left;
+		margin-top: 18px;
+		width: 100%;
+		max-width: 256px;
+		margin-right: 15px;
+	}
+
+	#geolocation-alert .submit_button {
+		display: inline-flex;
+		top: 15px;
+		position: relative;
+		margin: unset;
+	}
+	#geolocation-alert .submit_button button{
+		font-family: SourceSansProBold;
+		display: block;
+		width: 168px;
+		height: 40px;
+		box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.61);
+		background-color: black;
+		border-radius: 2px;
+		color: #fff;
+		text-transform: uppercase;
+		border-radius: 5px;
+		font-size: 16px;
+	}
+
+	#geolocation-alert .submit_button button:hover{
+		background-color: #2d2d2d;
+	}
+	
+	#geolocation-alert #dropdown_menu_flags {
+		width: 100%;
+		height: 42px;
+		margin-right: 70px;
+		max-width: 356px;
+	}
+	#geolocation-alert #dropdown_menu_flags button {
+		height: 42px;
+		max-width: 356px;
+		border: solid 1px #545047;
+		font-family: SourceSansProregular;
+		font-size: 18px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1;
+		letter-spacing: normal;
+		text-align: left;
+		color: #000000;
+	}
+	.button_selector_flag::after {
+		content: "\25bc";
+		position: absolute;
+		right: 15px;
+		top: 12px;
+		font-size: 21px;
+		color: #24171c;
+		border: none;
+	}
+
+	.flags_img {
+		width: 32px;
+		height: 22px;
+	}
+	#geolocation-container .close_button {
+		margin-left: 60px;
+		cursor: pointer;
+	}
+	
+	#geolocation-container .close_button,
+	#geolocation-container .close_button  .close {
+		position: initial;
+		width: 26px;
+		height: 26px;
+		border-radius: 100%;
+		display: none;
+	}
+	#geolocation-container .close_button  .close span {
+		min-width: 26px;
+		height: 26px;
+		font-size: 25px;
+	}
+	#geolocation-container .close_button  .close span img{
+		width: 25px;
+		height: 25px;
+	}
+	#geolocation-container .close_button button span.phrase_close {
+		display: flex;
+		font-family: SourceSansProRegular;
+		font-size: 12px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+		background-color: initial;
+		margin-left: 7px;
+	}
+	
+}

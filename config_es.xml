@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>shop_geolocation</name>
+    <displayName><![CDATA[Shop Geolocation]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[It shows an information modal if the user enters a store that is not the one defined for the user&#039;s country.]]></description>
+    <author><![CDATA[Sebastian Luna]]></author>
+    <tab><![CDATA[i18n_localization]]></tab>
+	<confirmUninstall><![CDATA[]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>
